@@ -10,4 +10,5 @@ class PatientMedicalHistoryRepositoryTest(TestCase):
 
     def test_save_method(self):
        id = self.patient_medical_history_repository.save_patient_medical_history(self.patient_medical_history)
-       self.assertEqual(id , self.patient_medical_history_repository.find_patient_medical_history_by_id(id).get_patient_medical_history_id())
+       retrived = self.patient_medical_history_repository.find_patient_medical_history_by_id(id).get_patient_medical_history_id()
+       self.assertEqual(id, retrived )

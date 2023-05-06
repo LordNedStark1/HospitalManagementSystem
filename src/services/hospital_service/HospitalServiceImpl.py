@@ -13,7 +13,7 @@ from utils.Mapper import Mapper
 class HospitalServiceImpl(HospitalServiceInterface):
 
     patient_service = PatientServiceImpl()
-    hospital_repo = HospitalRepositoryImpl()
+    hospital_repo = HospitalRepositoryImpl.get_instance()
     medical_staff_service = MedicalStaffServiceImpl()
     id_counter = 1
 

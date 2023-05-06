@@ -12,3 +12,4 @@ class PatientMedicalHistoryServiceTest(TestCase):
         self.assertEqual(history_id, self.patient_medical_history_service.find_patient_medical_history_by_id(history_id).get_patient_medical_history_id())
 
     def test_add_patient_medical_history(self):
+        pass

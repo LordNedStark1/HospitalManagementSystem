@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-class DoctorAppointment:
+class DoctorReport:
     def __init__(self):
         self.__doctor_id = ""
         self.__doctor_name = ""

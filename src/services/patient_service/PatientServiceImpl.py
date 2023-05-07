@@ -11,9 +11,9 @@ from utils.Mapper import Mapper
 
 
 class PatientServiceImpl(PatientServiceInterface):
-    patient_repo = PatientRepository()
+    patient_repo = PatientRepository.get_instance()
     patient_medical_history_impl = PatientMedicalHistoryImpl()
-    hospital_repo = HospitalRepositoryImpl.get_instance()
+    hospital_repo : HospitalRepositoryImpl = HospitalRepositoryImpl.get_instance()
     hospital_service = HospitalServiceImpl(hospital_repo)
 
     def register_patient(self, patient_registration_request: PatientRegistrationRequest):

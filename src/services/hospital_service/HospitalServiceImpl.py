@@ -4,7 +4,7 @@ from services.patient_service.PatientServiceImpl import PatientServiceImpl
 
 from models.Hospital import Hospital
 
-from repositories.HospitalRepository import HospitalRepositoryImpl
+from repositories.HospitalRepository import  HospitalRepositoryImpl
 from services.hospital_service.HospitalServiceInterface import HospitalServiceInterface
 from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
 from utils.Mapper import Mapper

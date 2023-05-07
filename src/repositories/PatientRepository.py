@@ -3,6 +3,19 @@ from utils.id_generator import Id
 
 class PatientRepository:
     __patients = {}
+    __instance = None
+
+    def __init__(self):
+        if PatientRepository.__instance is not None:
+            raise Exception("This class is a singleton!")
+        else:
+            PatientRepository.__instance = self
+
+    @staticmethod
+    def get_instance():
+        if PatientRepository.__instance is None:
+            PatientRepository()
+        return PatientRepository.__instance
 
     def save_patient(self, patient):
         patient.set_patient_id(Id.patient_id(patient))

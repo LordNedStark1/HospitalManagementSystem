@@ -12,12 +12,12 @@ from services.patient_service.PatientServiceImpl import PatientServiceImpl
 class PatientServiceTest(TestCase):
 
     def setUp(self) -> None:
-        self.hospital_repo = HospitalRepositoryImpl()
-        self.hospital_service = HospitalServiceImpl(self.hospital_repo)
+        self.hospital_service = HospitalServiceImpl()
         self.patient_service = PatientServiceImpl()
         self.booking_doctor_appointment_request = BookingDoctorAppointmentRequest()
 
         self.patient_registration_request = PatientRegistrationRequest()
+        self.patient_registration_response = PatientRegistrationResponse()
         self.hospital_id = self.hospital_service.register_new_hospital("unilag Hospital")
         self.hospital: Hospital = self.hospital_service.find_hospital_by_id(self.hospital_id)
         self.__patient_registration_request_method()

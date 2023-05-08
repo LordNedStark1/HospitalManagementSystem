@@ -3,14 +3,17 @@ from unittest import TestCase
 from dto.requests.EmploymentRequest import EmploymentRequest
 from dto.response.EmploymentResponse import EmploymentResponse
 from models.Hospital import Hospital
+from services.hospital_service.HospitalServiceImpl import HospitalServiceImpl
 from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
 
 
 class MedicalStaffServiceTest(TestCase):
     def setUp(self) -> None:
         self.medical_staff_service = MedicalStaffServiceImpl()
-        self.__employment_request_method()
+        self.hospital_service = HospitalServiceImpl()
+        self.hospital_id = self.hospital_service.register_new_hospital("unilag Hospital")
         self.employment_request = EmploymentRequest()
+        self.__employment_request_method()
 
     def __employment_request_method(self):
         self.employment_request.set_job_title("Doctor")
@@ -31,12 +34,17 @@ class MedicalStaffServiceTest(TestCase):
         self.employment_request.set_school_of_learning("Unizik")
         self.employment_request.set_years_of_practice(2)
         self.employment_request.set_specialty("physiotherapy")
-        hospital: Hospital = self.medical_staff_service.find_staff_by_id(self.hospital_id)
+
+        hospital: Hospital = self.hospital_service.find_hospital_by_id(self.hospital_id)
         employment_response: EmploymentResponse = self.hospital_service.employ_medical_staff(self.employment_request)
 
         message = "you are employed"
+
         response = f"Welcome to {hospital.get_hospital_name()}, Mark John, {message}" \
                    f" Your staff id is {employment_response.get_id()}. You will be working with us as a Doctor"
 
         self.assertEqual(response, employment_response.to_string())
-        self.assertEqual(2, self.hospital_service.total_number_of_staff())
+        self.assertEqual(1, self.hospital_service.total_number_of_staff())
+
+        staff = self.medical_staff_service.find_staff_by_id(employment_response.get_id())
+        self.assertEqual("Mark John",staff.get_name())

@@ -1,10 +1,10 @@
 from dto.requests.EmploymentRequest import EmploymentRequest
 from dto.requests.PatientRegistrationRequest import PatientRegistrationRequest
-from services.patient_service.PatientServiceImpl import PatientServiceImpl
+import services.patient_service.PatientServiceImpl
 
 from models.Hospital import Hospital
 
-from repositories.HospitalRepository import  HospitalRepositoryImpl
+from repositories.HospitalRepository import HospitalRepositoryImpl
 from services.hospital_service.HospitalServiceInterface import HospitalServiceInterface
 from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
 from utils.Mapper import Mapper
@@ -12,13 +12,10 @@ from utils.Mapper import Mapper
 
 class HospitalServiceImpl(HospitalServiceInterface):
 
-    patient_service = PatientServiceImpl()
+    patient_service = services.patient_service.PatientServiceImpl.PatientServiceImpl()
     hospital_repo = HospitalRepositoryImpl.get_instance()
     medical_staff_service = MedicalStaffServiceImpl()
     id_counter = 1
-
-    def __init__(self, hospital_repo: HospitalRepositoryImpl):
-        self.hospital_repo = hospital_repo
 
     def register_new_hospital(self, hospital_name):
         hospital = Hospital()
@@ -44,7 +41,7 @@ class HospitalServiceImpl(HospitalServiceInterface):
 
     def register_patient(self, patient_registration_request: PatientRegistrationRequest):
         hospital: Hospital = self.find_hospital_by_id(patient_registration_request.get_hospital_id())
-        return self.patient_service.register_patient(patient_registration_request, hospital)
+        return self.patient_service.register_patient(patient_registration_request)
 
     def admit_patient(self, patient_admission_request):
         pass

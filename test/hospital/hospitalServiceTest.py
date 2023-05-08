@@ -11,8 +11,8 @@ from services.hospital_service.HospitalServiceImpl import HospitalServiceImpl
 
 class HospitalServiceTest(TestCase):
     def setUp(self) -> None:
-        self.hospital_repo = HospitalRepositoryImpl()
-        self.hospital_service = HospitalServiceImpl(self.hospital_repo)
+
+        self.hospital_service = HospitalServiceImpl()
 
         self.employment_request = EmploymentRequest()
         self.patient_registration_request = PatientRegistrationRequest()

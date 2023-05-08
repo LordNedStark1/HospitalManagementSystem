@@ -1,9 +1,11 @@
 from utils.id_generator import Id
+import threading
 
 
 class PatientRepository:
     __patients = {}
     __instance = None
+    __lock = threading.Lock()
 
     def __init__(self):
         if PatientRepository.__instance is not None:
@@ -13,9 +15,10 @@ class PatientRepository:
 
     @staticmethod
     def get_instance():
-        if PatientRepository.__instance is None:
-            PatientRepository()
-        return PatientRepository.__instance
+        with PatientRepository.__lock:
+            if PatientRepository.__instance is None:
+                PatientRepository()
+            return PatientRepository.__instance
 
     def save_patient(self, patient):
         patient.set_patient_id(Id.patient_id(patient))

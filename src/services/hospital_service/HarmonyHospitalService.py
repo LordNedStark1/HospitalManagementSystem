@@ -1,18 +1,18 @@
 from dto.requests.EmploymentRequest import EmploymentRequest
 from dto.requests.PatientRegistrationRequest import PatientRegistrationRequest
-import services.patient_service.PatientServiceImpl
+import services.patient_service.HarmonyPatientService
 
 from models.Hospital import Hospital
 
 from repositories.HospitalRepository import HospitalRepositoryImpl
-from services.hospital_service.HospitalServiceInterface import HospitalServiceInterface
+from services.hospital_service.HospitalService import HospitalService
 from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
 from utils.Mapper import Mapper
 
 
-class HospitalServiceImpl(HospitalServiceInterface):
+class HarmonyHospitalServiceImpl(HospitalService):
 
-    patient_service = services.patient_service.PatientServiceImpl.PatientServiceImpl()
+    patient_service = services.patient_service.PatientServiceImpl.HarmonyPatientService()
     hospital_repo = HospitalRepositoryImpl.get_instance()
     medical_staff_service = MedicalStaffServiceImpl()
     id_counter = 1

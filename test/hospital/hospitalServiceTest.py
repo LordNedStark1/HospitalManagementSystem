@@ -6,13 +6,13 @@ from dto.response.EmploymentResponse import EmploymentResponse
 from dto.response.PatientRegistrationResponse import PatientRegistrationResponse
 from models.Hospital import Hospital
 from repositories.HospitalRepository import HospitalRepositoryImpl
-from services.hospital_service.HospitalServiceImpl import HospitalServiceImpl
+from services.hospital_service.HarmonyHospitalService import HarmonyHospitalServiceImpl
 
 
 class HospitalServiceTest(TestCase):
     def setUp(self) -> None:
 
-        self.hospital_service = HospitalServiceImpl()
+        self.hospital_service = HarmonyHospitalServiceImpl()
 
         self.employment_request = EmploymentRequest()
         self.patient_registration_request = PatientRegistrationRequest()

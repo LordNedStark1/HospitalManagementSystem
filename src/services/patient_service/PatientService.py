@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class PatientServiceInterface(ABC):
+class PatientService(ABC):
 
     @abstractmethod
     def register_patient(self, patient):

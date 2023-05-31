@@ -2,7 +2,6 @@ from utils.id_generator import Id
 import threading
 
 
-
 class HospitalRepositoryImpl:
     __hospitals = {}
     __instance = None

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class HospitalServiceInterface(ABC):
+class HospitalService(ABC):
 
     @abstractmethod
     def register_new_hospital(self, hospital_name):

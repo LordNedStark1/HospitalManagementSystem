@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from services.PatientMedicalHistoryService.PatientMedicalHistoryImpl import PatientMedicalHistoryImpl
+from services.PatientMedicalHistoryService.HarmonyPatientMedicalHistory import PatientMedicalHistoryImpl
 
 
 class PatientMedicalHistoryServiceTest(TestCase):

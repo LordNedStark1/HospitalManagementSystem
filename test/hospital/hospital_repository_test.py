@@ -1,4 +1,5 @@
 from unittest import TestCase
+import typing
 
 from models.Hospital import Hospital
 from repositories.HospitalRepository import HospitalRepositoryImpl

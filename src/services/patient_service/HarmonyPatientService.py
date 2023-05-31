@@ -2,19 +2,19 @@ from dto.requests.PatientRegistrationRequest import PatientRegistrationRequest
 from models.Hospital import Hospital
 
 from repositories.PatientRepository import PatientRepository
-from services.PatientMedicalHistoryService.PatientMedicalHistoryImpl import PatientMedicalHistoryImpl
+from services.PatientMedicalHistoryService.HarmonyPatientMedicalHistory import PatientMedicalHistoryImpl
 
-from services.patient_service.PatientServiceInterface import PatientServiceInterface
+from services.patient_service.PatientService import PatientService
 from utils.Mapper import Mapper
 
 
-class PatientServiceImpl(PatientServiceInterface):
+class HarmonyPatientService(PatientService):
     patient_repo = PatientRepository.get_instance()
     patient_medical_history_impl = PatientMedicalHistoryImpl()
 
     def register_patient(self, patient_registration_request: PatientRegistrationRequest):
-        from services.hospital_service.HospitalServiceImpl import HospitalServiceImpl
-        hospital_service = HospitalServiceImpl()
+        from services.hospital_service.HarmonyHospitalService import HarmonyHospitalServiceImpl
+        hospital_service = HarmonyHospitalServiceImpl()
         hospital: Hospital = hospital_service.find_hospital_by_id(patient_registration_request.get_hospital_id())
         if hospital is not None:
             patient = Mapper.map_patient_registration(hospital, patient_registration_request)

@@ -3,14 +3,14 @@ from unittest import TestCase
 from dto.requests.EmploymentRequest import EmploymentRequest
 from dto.response.EmploymentResponse import EmploymentResponse
 from models.Hospital import Hospital
-from services.hospital_service.HospitalServiceImpl import HospitalServiceImpl
+from services.hospital_service.HarmonyHospitalService import HarmonyHospitalServiceImpl
 from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
 
 
 class MedicalStaffServiceTest(TestCase):
     def setUp(self) -> None:
         self.medical_staff_service = MedicalStaffServiceImpl()
-        self.hospital_service = HospitalServiceImpl()
+        self.hospital_service = HarmonyHospitalServiceImpl()
         self.hospital_id = self.hospital_service.register_new_hospital("unilag Hospital")
         self.employment_request = EmploymentRequest()
         self.__employment_request_method()

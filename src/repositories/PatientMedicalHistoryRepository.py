@@ -1,8 +1,9 @@
 from models.PatientMedicalHistory import PatientMedicalHistory
+from repositories.PatientMEdicalHistoryRepositoryInterface import PatientMedicalHistoryRepositoryInterface
 from utils.id_generator import Id
 
 
-class PatientMedicalHistoryRepository:
+class PatientMedicalHistoryRepository (PatientMedicalHistoryRepositoryInterface):
     __patient_medical_history = {}
 
     def save_patient_medical_history(self, patient_medical_history: PatientMedicalHistory):

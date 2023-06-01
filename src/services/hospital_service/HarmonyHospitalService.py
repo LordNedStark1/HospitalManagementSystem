@@ -4,17 +4,18 @@ import services.patient_service.HarmonyPatientService
 
 from models.Hospital import Hospital
 
-from repositories.HospitalRepository import HospitalRepositoryImpl
+from repositories.HarmonyHospitalRepository import HarmonyHospitalRepository
 from services.hospital_service.HospitalService import HospitalService
-from services.medical_staff_service.MedicalStaffServiceImpl import MedicalStaffServiceImpl
+from services.medical_staff_service.HarmonyMedicalStaffService import HarmonyMedicalStaffService
 from utils.Mapper import Mapper
 
 
-class HarmonyHospitalServiceImpl(HospitalService):
+class HarmonyHospitalService(HospitalService):
 
-    patient_service = services.patient_service.PatientServiceImpl.HarmonyPatientService()
-    hospital_repo = HospitalRepositoryImpl.get_instance()
-    medical_staff_service = MedicalStaffServiceImpl()
+    patient_service = services.patient_service.HarmonyPatientService.HarmonyPatientService()
+
+    hospital_repo = HarmonyHospitalRepository.get_instance()
+    medical_staff_service = HarmonyMedicalStaffService()
     id_counter = 1
 
     def register_new_hospital(self, hospital_name):

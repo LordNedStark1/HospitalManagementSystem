@@ -5,14 +5,14 @@ from dto.requests.PatientRegistrationRequest import PatientRegistrationRequest
 from dto.response.EmploymentResponse import EmploymentResponse
 from dto.response.PatientRegistrationResponse import PatientRegistrationResponse
 from models.Hospital import Hospital
-from repositories.HospitalRepository import HospitalRepositoryImpl
-from services.hospital_service.HarmonyHospitalService import HarmonyHospitalServiceImpl
+from repositories.HarmonyHospitalRepository import HarmonyHospitalRepository
+from services.hospital_service.HarmonyHospitalService import HarmonyHospitalService
 
 
 class HospitalServiceTest(TestCase):
     def setUp(self) -> None:
 
-        self.hospital_service = HarmonyHospitalServiceImpl()
+        self.hospital_service = HarmonyHospitalService()
 
         self.employment_request = EmploymentRequest()
         self.patient_registration_request = PatientRegistrationRequest()

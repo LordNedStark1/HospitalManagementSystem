@@ -2,7 +2,7 @@ from models.PatientMedicalHistory import PatientMedicalHistory
 from repositories.PatientMedicalHistoryRepository import PatientMedicalHistoryRepository
 
 
-class PatientMedicalHistoryImpl:
+class HarmonyPatientMedicalHistory:
     patient_medical_history_repo = PatientMedicalHistoryRepository()
 
     def creat_new_patient_medical_history(self):

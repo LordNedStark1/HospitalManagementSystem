@@ -1,8 +1,9 @@
 from models.MedicalStaff import MedicalStaff
+from repositories.MedicalStaffRepositoryInterface import MedicalStaffRepositoryInterface
 from utils.id_generator import Id
 
 
-class MedicalStaffRepository:
+class HarmonyMedicalStaffRepository(MedicalStaffRepositoryInterface):
     medical_staffs = {}
 
     def save(self, medical_staff: MedicalStaff):

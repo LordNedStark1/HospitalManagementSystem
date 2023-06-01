@@ -2,11 +2,11 @@ from unittest import TestCase
 import typing
 
 from models.Hospital import Hospital
-from repositories.HospitalRepository import HospitalRepositoryImpl
+from repositories.HarmonyHospitalRepository import HarmonyHospitalRepository
 
 
 class HospitalRepositoryTest(TestCase):
-    hospital_repo = HospitalRepositoryImpl()
+    hospital_repo = HarmonyHospitalRepository()
 
     def test_save_method(self):
         hospital = Hospital()

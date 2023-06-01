@@ -1,10 +1,10 @@
-from repositories.MedicalStaffRepository import MedicalStaffRepository
+from repositories.HarmonyMedicalStaffRepository import HarmonyMedicalStaffRepository
 from services.medical_staff_service.MedicalStaffServiceInterface import MedicalStaffServiceInterface
 from utils.Mapper import Mapper
 
 
-class MedicalStaffServiceImpl(MedicalStaffServiceInterface):
-    medical_staff_repo = MedicalStaffRepository()
+class HarmonyMedicalStaffService(MedicalStaffServiceInterface):
+    medical_staff_repo = HarmonyMedicalStaffRepository()
 
     def employ_medical_staff(self, medical_staff):
         self.medical_staff_repo.save(medical_staff)

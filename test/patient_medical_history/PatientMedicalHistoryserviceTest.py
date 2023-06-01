@@ -1,11 +1,11 @@
 from unittest import TestCase
 
-from services.PatientMedicalHistoryService.HarmonyPatientMedicalHistory import PatientMedicalHistoryImpl
+from services.PatientMedicalHistoryService.HarmonyPatientMedicalHistory import HarmonyPatientMedicalHistory
 
 
 class PatientMedicalHistoryServiceTest(TestCase):
     def setUp(self) -> None:
-        self.patient_medical_history_service = PatientMedicalHistoryImpl()
+        self.patient_medical_history_service = HarmonyPatientMedicalHistory()
 
     def test_creat_new_patient_medical_history(self):
         history_id = self.patient_medical_history_service.creat_new_patient_medical_history()

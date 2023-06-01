@@ -1,8 +1,8 @@
 from models.Hospital import Hospital
-from repositories.HospitalRepository import HospitalRepositoryImpl
+from repositories.HarmonyHospitalRepository import HarmonyHospitalRepository
 
-hospital_repo: HospitalRepositoryImpl = HospitalRepositoryImpl.get_instance()
-hospital_repo2 = HospitalRepositoryImpl.get_instance()
+hospital_repo: HarmonyHospitalRepository = HarmonyHospitalRepository.get_instance()
+hospital_repo2 = HarmonyHospitalRepository.get_instance()
 hospital = Hospital()
 hospital2 = Hospital()
 

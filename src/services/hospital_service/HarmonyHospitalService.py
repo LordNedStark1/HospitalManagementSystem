@@ -42,7 +42,7 @@ class HarmonyHospitalService(HospitalService):
 
     def register_patient(self, patient_registration_request: PatientRegistrationRequest):
         hospital: Hospital = self.find_hospital_by_id(patient_registration_request.get_hospital_id())
-        return self.patient_service.register_patient(patient_registration_request)
+        return self.patient_service.patient_registration(patient_registration_request)
 
     def admit_patient(self, patient_admission_request):
         pass

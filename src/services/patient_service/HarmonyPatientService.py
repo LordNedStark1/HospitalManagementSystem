@@ -12,7 +12,7 @@ class HarmonyPatientService(PatientService):
     patient_repo = PatientRepository.get_instance()
     harmony_patient_medical_history = HarmonyPatientMedicalHistory()
 
-    def register_patient(self, patient_registration_request: PatientRegistrationRequest):
+    def patient_registration(self, patient_registration_request: PatientRegistrationRequest):
         from services.hospital_service.HarmonyHospitalService import HarmonyHospitalService
         hospital_service = HarmonyHospitalService()
 

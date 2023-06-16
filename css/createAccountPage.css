@@ -1,0 +1,128 @@
+*{
+   margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.mainContainer{
+    display: flex;
+}
+.continue{
+    width: 590px;
+    height: 33px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    color: #5A5A5A;
+    order: 1;
+
+    flex-grow: 0;
+    flex: none;
+}
+h1{
+   
+    font-size: 40px;
+    font-weight: 700;
+    color: #1B1C1E;
+    width: 590px;
+    height: 55px;
+    font-style: normal;
+    line-height: 55px;
+    margin-bottom: 18px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.stetoscopeImage{
+    background-image: url("/img/createAccountImage.svg");
+    width: 956px;
+    height: 150vh;
+    padding-right: 195px;
+}
+#firstInputBoxes{
+    border: 2px solid #C9C9C9;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    font-size: 20px;
+
+    width: 510px;
+    height: 57px;
+    color: #1B1C1E;
+
+    line-height: 25px;
+    font-weight: 600;
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 35px;
+}
+#createAccount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+
+    font-size: 20px;
+    width: 523px;
+    height: 65px;
+    left: 859px;
+    top: 414px;
+    background-color: #3D71BD;
+    color: #FFFFFF;
+    border-radius: 10px;
+
+    border: none;
+}
+.loginBody{
+    margin-top: 48px;
+    padding-left: 87px;
+}
+#createAccountWith{
+   display: flex;
+    width: 523px;
+    height: 65px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
+    border: 2px solid #C9C9C9;
+    
+    border-radius: 10px ;
+    background-color: white;
+    font-size: 19px;
+    padding-left: 165px;
+    padding-top: 18px;
+}
+.createAccount{
+    text-decoration: underline;
+    font-weight: bold ;
+    padding-left: 15px;
+}
+.logo{
+    padding-right: 15px;
+    padding-top: 3px;
+}
+.lastText{
+    display: flex;
+    flex-direction: row;
+    padding-left: 85px;
+}
+.lastText p{
+    font-size: 19px;
+}
+.betweenLines{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#line{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+#line p{
+    padding-top: 8px;
+}

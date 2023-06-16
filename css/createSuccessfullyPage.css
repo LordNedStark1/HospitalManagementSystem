@@ -1,0 +1,15 @@
+body{
+    background-image: url("/img/statoscopeImage.svg") ;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 155vh;
+}
+.middle{
+    margin: auto;
+    justify-content: center;
+    place-items: center;
+}
+button{
+    height: 45px;
+    width: 345px;
+}

@@ -46,3 +46,5 @@ class PatientServiceTest(TestCase):
     def test_patient_can_book_appointment(self):
         booked_appointment_response = self.patient_service.book_doctor_appointment(self.booking_doctor_appointment_request)
 
+    def test_patient_view_appointmentsS(self):
+        pass

@@ -48,3 +48,6 @@ class MedicalStaffServiceTest(TestCase):
 
         staff = self.medical_staff_service.find_staff_by_id(employment_response.get_id())
         self.assertEqual("Mark John",staff.get_name())
+
+        def test_medical_staff_can_view_all_appointments(self):
+            pass

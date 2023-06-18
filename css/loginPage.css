@@ -39,7 +39,7 @@ h1{
 .stetoscopeImage{
     background-image: url("/img/statoscopeImage.svg");
     width: 956px;
-    height: 110vh;
+    height: 120vh;
 }
 #firstInputBoxes{
     border: 2px solid #C9C9C9;

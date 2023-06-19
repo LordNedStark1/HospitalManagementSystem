@@ -5,8 +5,8 @@ class Hospital:
         self.__hospital_id = ""
         self.__hospital_id = ""
         self.__hospital_name = ""
-        self.__medical_staffs = []
-        self.__patients = []
+        self.__medical_staffs_id = []
+        self.__patients_id = []
 
     def set_hospital_id(self, hospital_id):
         self.__hospital_id = hospital_id
@@ -24,16 +24,16 @@ class Hospital:
         return self.__hospital_name
 
     def set_medical_staff(self, medical_staff_id):
-        self.__medical_staffs.append(medical_staff_id)
+        self.__medical_staffs_id.append(medical_staff_id)
 
     def get_medical_staffs(self):
-        return self.__medical_staffs
+        return self.__medical_staffs_id
 
     def set_patient(self, patient_id):
-        self.__patients.append(patient_id)
+        self.__patients_id.append(patient_id)
 
     def get_patients(self):
-        return self.__patients
+        return self.__patients_id
 
     def set_hospital_head(self, hospital_head):
         self.__hospital_head = hospital_head

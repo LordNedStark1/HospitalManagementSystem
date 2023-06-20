@@ -39,7 +39,7 @@ h1{
 .stetoscopeImage{
     background-image: url("/img/statoscopeImage.svg");
     width: 956px;
-    height: 120vh;
+    height: 100vh;
 }
 #firstInputBoxes{
     border: 2px solid #C9C9C9;
@@ -56,7 +56,7 @@ h1{
     font-weight: 600;
     flex: none;
     flex-grow: 0;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 #signInButton{
     display: flex;
@@ -78,15 +78,15 @@ h1{
     border: none;
 }
 .loginBody{
-    margin-top: 48px;
+    margin-top: 18px;
     padding-left: 87px;
 }
 #signInWith{
    display: flex;
     width: 523px;
-    height: 65px;
+    height: 55px;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
    
     border: 2px solid #C9C9C9;
     

@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+
+    <link rel="stylesheet" href="/css/selectDiv.css">
     <link rel="stylesheet" href="/css/landingPage.css">
+    <link rel="stylesheet" href="/css/contactUs.css">
+    <link rel="stylesheet" href="/css/bottomLayer.css">
+    <link rel="stylesheet" href="/css/topNav.css">
 </head>
 <body>
     <div class="navBar">
-        <img src="" alt="logo">
+        <img src="/img/logo.svg" alt="logo">
         <div class="listNav">
             <ul>
                 <li>Home</li>
@@ -18,16 +23,17 @@
                 <li>Contacts</li>
             </ul>
         </div>
-        <div class="navBarLeeftButtons">
-            <button class="signIn"> Sign in</button>
-            <button class="getStarted"> Get Started</button>
+        <div class="navBarLeftButtons">
+            <a href="/html/loginPage.html"><button class="signIn"> Sign in</button></a>
+            <a href="/html/createAccountPage.html"><button class="getStarted"> Get Started</button></a>
         </div>
     </div>
     <div class="mainImage">
-        
-        <h1 >Complete and Accessible HealthCare Solutions</h1>
+        <div class="mainImageTextDiv">
+        <h1 class="h1">Complete and Accessible Health Care Solutions</h1>
         <p class="telemedicinePlatform">Gain accessible to the best telemedicine platform, Book appointment with medical practitioners and get access to medications</p>
         <button class="bookConsultationButton">Book Consultation</button>
+        </div>
     </div>
     <div class="bookConsultationOutterDiv">
         <div class="doctorSmilingImageDiv">
@@ -44,8 +50,156 @@
             </ul>
         </div>
     </div>
-    <div class="whatWeOfferDiv">
-        
+    <div class="whatWeOfferOuterDiv">
+        <div class="whatWeOfferMainDiv">
+            <h3>What we offer</h3>
+            <p class="goThrough">Go through the process listed to book appointments with our medical Specialists</p>
+        </div>
+        <div class="threeBoxesDiv">
+            <div class="expert">
+                <img src="/img/bagLogo.svg" alt="" height="25px" width="20px">
+                <h5>Expert Medical Aid</h5>
+                <p>We offer expert and customer friendly medical aid to our patients from professionals in practice, Patients are rest assured of the best care </p>
+            </div>
+            <div class="expert">
+                <img src="/img/expertSpecialistImage.svg" alt="" >
+                <h5>Expert Medical Aid</h5>
+                <p>We offer expert and customer friendly medical aid to our patients from professionals in practice, Patients are rest assured of the best care </p>
+            </div>
+            <div class="expert">
+                <img src="/img/supportImage.svg" alt="" height="25px" width="20px">
+                <h5>Expert Medical Aid</h5>
+                <p>We offer expert and customer friendly medical aid to our patients from professionals in practice, Patients are rest assured of the best care </p>
+            </div>
+        </div>
+    </div>
+    <div class="secondSmilingDoctorWithNote">
+        <div class="secondSmilingDoctorForm">
+            <h3>Our Process</h3>
+            <p>Go through the process listed to book appointments with our medical Specialists</p>
+            <div class="secondCorrect"><img src="/img/correctImage.svg" alt=""><p>Complete registration and create account </p></div>
+            <div class="secondCorrect"><img src="/img/correctImage.svg" alt=""><p>Complete registration and create account </p></div>
+            <div class="secondCorrect"><img src="/img/correctImage.svg" alt=""><p>Complete registration and create account </p></div>
+        </div>
+        <div class="secondSmilingDoctorImage">
+
+            <div class="secondCorrect" id="onImage"><img src="/img/correctImage.svg" alt=""><p>Complete registration and create account </p></div>
+        </div>
+    </div>
+    <div class="testimonialsDiv">
+        <div class="topTestimonialsDiv">
+            <h3>Testimonials</h3>
+            <p>Here's what our patients have said about us</p>
+        </div>
+        <div class="testimonialsBoxesToFlexDiv">
+            <div class="testimonialsBoxes">
+                <div class="imageTexttestimonials">
+                    <img src="/img/face.svg" alt="">
+                    <h3>Adekunle Jacobs</h3>
+                </div>
+                <p>Having booked appointment with them has been a seamless experience, The finest Telemedicine platform out there with expert healthcare specialists, quick response and attentive to detail</p>
+                <div class="starDiv">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/lightGoldStar.svg" alt="">
+                </div>
+            </div>
+            <div class="testimonialsBoxes">
+                <div class="imageTexttestimonials">
+                    <img src="/img/ladyWearingGlassImage.svg" alt="">
+                    <h3>Gloria Aderonke</h3>
+                </div>
+                <p>The Healthcare specialists here are always up to the task when needed, i've had a great experience having to book appointments remotely, this further reduced my waiting time during physical appointment with my specialist</p>
+                <div class="starDiv">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/lightGoldStar.svg" alt="">
+                </div>
+            </div>
+            <div class="testimonialsBoxes">
+                <div class="imageTexttestimonials">
+                    <img src="/img/manImage.svg" alt="">
+                    <h3>Adekunle Jacobs</h3>
+                </div>
+                <p>Having booked appointment with them has been a seamless experience, The finest Telemedicine platform out there with expert healthcare specialists, quick response and attentive to detail</p>
+                <div class="starDiv">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/lightGoldStar.svg" alt="">
+                </div>
+            </div>
+            <div class="testimonialsBoxes">
+                <div class="imageTexttestimonials">
+                    <img src="/img/face.svg" alt="">
+                    <h3>Adekunle Jacobs</h3>
+                </div>
+                <p>The Healthcare specialists here are always up to the task when needed, i’ve had a great experience having to book appointments remotely, this further reduced my waiting time during physical appointment with my specialist</p>
+                <div class="starDiv">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/goldStar.svg" alt="">
+                    <img src="/img/lightGoldStar.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="frequentlyAskedQuestionsMainContainer">
+        <div class="FrequentlyAskedQuestions">
+            <h3>Frequently asked questions</h3>
+            <p>Frequently asked questions from our customers</p>
+        </div>
+        <div class="selectDivToFlex">
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+                <select name="" id=""><option value="">What services do you provide for patients?</option></select>
+        </div>
+    </div>
+    <div class="contactUsDiv">
+        <img src="/img/doctorWithHeadPhone.svg" alt="">
+        <div class="contactUsForm">
+            <h3>Contact us</h3>
+            <p>Incase of any further questions and inquiries do contact us via our dedicated email </p>
+            <input type="text" class="contactusInputBox" placeholder="Email Address">
+            <input type="text" class="contactusInputBox" placeholder="Message">
+            <button class="contactUsButtonInContactUsForm">Contact Us</button>
+        </div>
+    </div>
+    <div class="bottomDiv">
+        <div class="firstBottomDiv">
+            <h3>LOGO</h3>
+            <p>Gain access to the best telemedicine platform, Book appointment with medical practitioners, and get access to medications </p>
+        </div>
+        <div class="firstBottomDiv">
+            <h4>Quick links</h4>
+            <p>Home</p>
+            <p>About us</p>
+            <p>Practitioners</p>
+            <p>FAQS</p>
+            <p>Contact</p>
+        </div>
+        <div class="firstBottomDiv">
+            <h4>Contacts</h4>
+            <p>FaceBook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>LinkedIn</p>
+        </div>
+        <div class="firstBottomDiv">
+            <h4>Newsletter</h4>
+            <input type="text" placeholder="Email Address" >
+            <button class="submitBotton">Submit</button>
+        </div>
+
     </div>
 </body>
 </html>

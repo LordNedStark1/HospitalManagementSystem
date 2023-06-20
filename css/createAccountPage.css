@@ -39,7 +39,7 @@ h1{
 .stetoscopeImage{
     background-image: url("/img/createAccountImage.svg");
     width: 956px;
-    height: 150vh;
+    height: 100vh;
     padding-right: 195px;
 }
 #firstInputBoxes{
@@ -50,14 +50,14 @@ h1{
     font-size: 20px;
 
     width: 510px;
-    height: 57px;
+    height: 37px;
     color: #1B1C1E;
 
     line-height: 25px;
     font-weight: 600;
     flex: none;
     flex-grow: 0;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 #createAccount{
     display: flex;
@@ -65,11 +65,11 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    gap: 10px;
+    gap: 6px;
 
     font-size: 20px;
     width: 523px;
-    height: 65px;
+    height: 57px;
     left: 859px;
     top: 414px;
     background-color: #3D71BD;
@@ -79,15 +79,15 @@ h1{
     border: none;
 }
 .loginBody{
-    margin-top: 48px;
+    margin-top: 14px;
     padding-left: 87px;
 }
 #createAccountWith{
    display: flex;
     width: 523px;
-    height: 65px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    height: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
    
     border: 2px solid #C9C9C9;
     

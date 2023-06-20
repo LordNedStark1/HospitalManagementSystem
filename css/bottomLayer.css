@@ -1,0 +1,38 @@
+.bottomDiv{
+    display: flex;
+    margin-left: 25px;
+}
+.firstBottomDiv p{
+    width: 220px; 
+    font-size: 20px;  
+}
+.firstBottomDiv{
+    margin-right: 60px;
+    margin-left: 45px;
+}
+.firstBottomDiv h3{
+    font-size: 30px;
+}
+.firstBottomDiv h4{
+    font-size: 20px;
+}
+.firstBottomDiv input{
+    height: 55px;
+    width: 234px;
+    border-radius: 8px;
+    border: solid 1px #5A5A5A;
+}
+.submitBotton{
+    height: 55px;
+    width: 109px;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+    align-items: flex-start;
+    background: #3D71BD;
+    border-radius: 15px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

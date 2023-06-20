@@ -1,0 +1,17 @@
+select{
+    height: 55px;
+    width: 545px;
+    border-radius: 7px;
+    margin-left: 35px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.FrequentlyAskedQuestions{
+    margin-left: 35px;
+}
+.FrequentlyAskedQuestions h3{
+    font-size: 35px;
+}
+.FrequentlyAskedQuestions p{
+    font-size: 18px;
+}

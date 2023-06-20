@@ -1,0 +1,97 @@
+.topBackgroundImage{
+    background-image: url("/img/practitionersTopBackgroundImage.svg");
+    background-repeat: no-repeat;
+    height: 94vh;
+    width: 100%;
+
+    margin-top: 25px;
+}
+.ensureQualityHealtCareMainContainer{
+    display: flex;
+}
+.ensureQualityHealtCareOuterImageDiv{
+    height: 659px;
+    width: 545px;
+    border: solid 2px red;
+    margin-left: 55px;
+    padding-right: 45px;
+    
+}
+.ensureQualityHealtCareContentDiv{
+    height: 659px;
+    width: 545px;
+    margin-left: 95px;
+}
+.imageDivToFlex{
+    display: flex;
+}
+.doctorInSurgery{
+    background-image: url("/img/doctorInSurgery.svg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    /* margin-left: 374px; */
+}
+.doctorCheckingBp{
+    background-image: url("/img/doctorCheckingBp.svg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    /* padding-left: 34px; */
+}
+.whiteCoatDoctorThirdImage{
+    padding-top: 95px;
+    padding-left: 98px;
+}
+
+.correctDivToFlex{
+    display: flex;
+}
+.firstSetOfLinks p{
+    margin-left: 25px;
+}
+.propellingQuality{
+    margin-left: 45px;
+}
+.ensureQualityHealtCareContentDiv h3{
+    font-size: 35px;
+}
+.ensureQualityHealtCareContentDiv h4{
+    font-size: 30px;
+}
+.ensureQualityHealtCareContentDiv p{
+    font-size: 25px;
+    
+}
+
+.imageDivMainContainer{
+    
+    padding-left: 75px;
+    display: flex;
+   
+}
+.imageDivGrouping{
+    height: 145px;
+    width: 123px;
+}
+.topImage{
+    background-image: url("/img/maleDoctorMiddleOfToFemale.svg");
+    background-repeat: no-repeat;
+    height: 345px;
+    width: 473px;
+}
+.ImageToAdjust{
+    padding-left: 285px;
+    padding-top: 185px;
+}
+.reachUsDiv{
+    padding-top: 80px;
+    margin-left: 645px;
+    margin-bottom: 245px;
+}
+.socialMediaLinkDiv{
+    display: flex;
+}
+.firstSetOfLinks{
+    margin-right: 75px;
+}

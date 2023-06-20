@@ -1,0 +1,59 @@
+.navBarLeftButtons{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 15px;
+    
+}
+.getStarted{
+    background-color: #3D71BD;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    order: 1;
+    flex-grow: 0;
+
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+
+    width: 141px;
+    height: 53px;
+}
+.signIn{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    border: solid 1px black;
+    height: 50px;
+    width: 91px;
+    padding-left: 18px;
+    
+}
+.signIn:hover{
+    color: red;
+}
+.getStarted:hover{
+    color: black;
+    background-color: rgb(63, 162, 248);
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18px;
+}
+
+.listNav ul{
+    justify-content: space-evenly;
+    list-style: none;
+    width: 600px;
+    display: flex;
+    font-size: 20px;
+}

@@ -2,14 +2,31 @@ body{
     background-image: url("/img/statoscopeImage.svg") ;
     /* background-repeat: no-repeat; */
     background-size: cover;
-    height: 155vh;
+    height: 80vh;
 }
 .middle{
     margin: auto;
     justify-content: center;
     place-items: center;
+    display: grid;
+
+    /* color: #FFFFFF; */
+    color: blue;
+    padding-top: 195px;
+    font-size: 25px;
+    width: 500px;
 }
 button{
     height: 45px;
     width: 345px;
+    background-color: #3D71BD;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
